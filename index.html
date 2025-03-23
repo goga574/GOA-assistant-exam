@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="input-section">
+            <h1>Employees</h1>
+            <div class="input">
+                <input type="text" placeholder="Enter Name">
+                <input type="text" placeholder="Enter Job">
+            </div>
+
+            <div class="button-div">
+                <button class="add">Add</button>
+                <button class="Update">Update</button>
+            </div>
+
+
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Job</th>
+                </tr>
+
+
+                <tr>
+                    <td>3</td>
+                    <td>George</td>
+                    <td>Engineer</td>
+                    <td class="but"><button  id="but1">Edit</button><button  id="but2">Delete</button></td>
+                </tr>
+
+
+                <tr>
+                    <td>8</td>
+                    <td>Martin</td>
+                    <td>Police Officer</td>
+                    <td class="but">
+                        <button id="but1">Edit</button>
+                        <button id="but2">Delete</button>
+                    </td>
+                    
+                    
+                </tr>
+            </table>
+            <div class="dark-m">
+                <button class="dark" onclick=darkMode()>Dark</button>
+                <button class="light" onclick=lightMode()>Light</button>
+            </div>
+            
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

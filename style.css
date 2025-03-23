@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.input-section{
+    width:1800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 100vh;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    background-color: rgb(141, 228, 100);
+}
+input::placeholder{
+    color: #fff;
+}
+h1{
+    font-size: 40px;
+}
+.button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add{
+    background-color: blue;
+}
+
+.Update{
+    background-color: green;
+}
+
+table{
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+table tr td,table tr th{
+    padding: 20px 40px;
+    text-align: center;
+    border: 1px solid grey;
+    
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+#but1{
+    background-color: rgb(221, 221, 49);
+}
+#but2{
+    background-color: red;
+}
+.dark-m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: -550px;
+    right: -500px;
+}
+.dark{
+    padding: 8px 15px;
+    background-color: black;
+}
+.light{
+    padding: 8px 15px;
+    background-color: cadetblue;
+}
+    
