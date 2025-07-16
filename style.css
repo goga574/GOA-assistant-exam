@@ -1,109 +1,262 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; 
     font-family: sans-serif;
-    overflow-x: hidden;
-}
-.input-section{
-    width:1800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
+    background-image: url(./images/Untitled-design-1-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
     height: 100vh;
-}
-.input{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-}
-input{
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    padding: 0px 10px;
-    background-color: rgb(141, 228, 100);
-}
-input::placeholder{
-    color: #fff;
-}
-h1{
-    font-size: 40px;
-}
-.button-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
 }
 
-button{
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: none;
+header {
+    background-color: #0C2A28;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    color: #E4E1B6;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.main-h1 {
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #285f5a;
+}
+
+
+.maindiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    height: 100vh;
+    
+
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+}
+
+.hi {
     color: #fff;
+    font-size: 60px;
+}
+
+.txt {
+    color: #fff;
+    font-size: 25px;
+}
+
+.txt-div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.seehotels,
+.bookbutton {
+    background-color: #ceae47;
+    padding: 15px 30px;
+    border: none;
+    transition: 0.3s;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.seehotels:hover {
+    background: #b39738;
     cursor: pointer;
 }
 
-.add{
-    background-color: blue;
+.bookbutton:hover {
+    background-color: #b39738;
+    cursor: pointer;
 }
 
-.Update{
-    background-color: green;
-}
-
-table{
-    border: 1px solid grey;
-    border-collapse: collapse;
-}
-table tr td,table tr th{
-    padding: 20px 40px;
-    text-align: center;
-    border: 1px solid grey;
-    
-}
-.but{
+form {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    gap: 50px;
+}
+
+.formhead {
+    font-size: 40px;
+}
+
+.inputsdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+.blurDiv{
+    width: 100%;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    position: relative;
+    z-index: 99;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hotelMain {
+    background-color: #fff;
+    width: 60%;
+    height: 600px;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    z-index: 100;
+    overflow:scroll;
+    padding: 0px;
+    display: grid;
+    padding-top: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     justify-content: center;
     gap: 20px;
+}
+.fa-x{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.fa-x:hover{
+    cursor: pointer;
+    color: red;
+    transform: scale(1.2);
+}
 
+/* width */
+.hotelMain::-webkit-scrollbar {
+    width: 10px;
 }
-#but1{
-    background-color: rgb(221, 221, 49);
+
+/* Track */
+.hotelMain::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
-#but2{
-    background-color: red;
+
+/* Handle */
+.hotelMain::-webkit-scrollbar-thumb {
+    background: #888;
 }
-.dark-m{
+
+/* Handle on hover */
+.hotelMain::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.child{
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.child img{
+    width: 100%;
+    height: 150px;
+}
+
+.txts{
+    width: 100%;
+    display: flex;
+    align-items: start;
     justify-content: center;
-    gap: 10px;
-    position: relative;
-    top: -550px;
-    right: -500px;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 10px;
 }
-.dark{
-    padding: 8px 15px;
-    background-color: black;
+.hotname{
+    font-size: 20px;
 }
-.light{
-    padding: 8px 15px;
-    background-color: cadetblue;
+.locationp{
+    font-size: 15px;
 }
-    
+
+.bookbtn{
+    padding: 7px 15px;
+    border: none;
+    background-color:#c2a239;
+    border-radius: 5px;
+    color: #fff;
+    font-size:14px;
+    transition: 0.3s;
+}
+.bookbtn:hover{
+    cursor: pointer;
+    background-color: #a0852e;
+}

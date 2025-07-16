@@ -5,61 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35997d38bd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+        <h1 class="main-h1">Booking</h1>
+        <nav>
+            <ul>
+                <li>Hotels</li>
+                <li>Booking</li>
+            </ul>
+        </nav>
+    </header>
+
+
     <main>
-        <section class="input-section">
-            <h1>Employees</h1>
-            <div class="input">
-                <input type="text" placeholder="Enter Name">
-                <input type="text" placeholder="Enter Job">
+        <div class="maindiv">
+            <div class="txt-div">
+                <h2 class="hi">Discover The Perfect Balance <br> Of Hospitality,Luxury <br>And Comfort</h2>
+
+                <p class="txt">
+                    We Are Focused providing with the hight level of <br>comfort and excellent,affordable rates
+                </p>
+
+                <button class="seehotels">See Hotels</button>
             </div>
 
-            <div class="button-div">
-                <button class="add">Add</button>
-                <button class="Update">Update</button>
+
+            <div class="formdiv">
+                <form action="">
+                    <h3 class="formhead">Book Now</h3>
+
+                    <div class="inputsdiv">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="gmail" placeholder="Your Email">
+                        <input type="number" name="quantity" placeholder="Quantity">
+                        <input type="date" name="date" placeholder="Date">
+                    </div>
+
+                    <button class="bookbutton">
+                        Book Now
+                    </button>
+                </form>
             </div>
+        </div>
 
 
-            <table>
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Job</th>
-                </tr>
 
 
-                <tr>
-                    <td>3</td>
-                    <td>George</td>
-                    <td>Engineer</td>
-                    <td class="but"><button  id="but1">Edit</button><button  id="but2">Delete</button></td>
-                </tr>
 
 
-                <tr>
-                    <td>8</td>
-                    <td>Martin</td>
-                    <td>Police Officer</td>
-                    <td class="but">
-                        <button id="but1">Edit</button>
-                        <button id="but2">Delete</button>
-                    </td>
-                    
-                    
-                </tr>
-            </table>
-            <div class="dark-m">
-                <button class="dark" onclick=darkMode()>Dark</button>
-                <button class="light" onclick=lightMode()>Light</button>
-            </div>
-            
-        </section>
+
+        <!-- Hotels Div -->
+        
     </main>
+    <div class="blurDiv">
+        <div class="hotelMain">
+            <i class="fa-solid fa-x"></i>
+            
+            <div class="child">
+                <img src="/images/hot1.jpg" alt="">
 
+                <div class="txts">
+                    <p class="hotname">First Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+            <div class="child">
+                <img src="/images/hot2.jpg" alt="">
+
+                <div class="txts">
+                    <p class="hotname">Second Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+            <div class="child">
+                <img src="/images/hot3.jpg" alt="">
+
+                <div class="txts">
+                    <p class="hotname">Third Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+            <div class="child">
+                <img src="/images/hot4.jpg" alt="">
+
+                <div class="txts">
+                    <p class="hotname">Fourth Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+            <div class="child">
+                <img src="/images/hot5.jpg" alt="">
+
+                <div class="txts">
+                    <p class="hotname">fifth Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+            <div class="child">
+                <img src="/images/hot6.jpg" alt="">
+
+                <div class="txts">
+                    <p class="hotname">Sixth Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+            <div class="child">
+                <img src="/images/hot7.jpg" alt="">
+
+                <div class="txts">
+                    <p class="hotname">Seventh Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+            <div class="child">
+                <img src="/images/hot8.jpg" alt="">
+
+                <div class="txts">
+                    <p class="hotname">Eighth Hotel</p>
+                    <p class="locationp">location</p>
+                </div>
+                <button class="bookbtn">Book Now</button>
+            </div>
+
+        </div>
+    </div>
+    
+    
 
     <script src="script.js"></script>
 </body>
